@@ -1,0 +1,75 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#F4F8F6"/>
+
+  <!-- Source address records -->
+  <g fill="#DCE9E3">
+    <rect x="65" y="77" width="130" height="28" rx="6"/>
+    <rect x="65" y="119" width="130" height="28" rx="6"/>
+    <rect x="65" y="161" width="130" height="28" rx="6"/>
+    <rect x="65" y="203" width="130" height="28" rx="6"/>
+  </g>
+
+  <!-- Matched address records -->
+  <g fill="#DCE9E3">
+    <rect x="405" y="77" width="130" height="28" rx="6"/>
+    <rect x="405" y="119" width="130" height="28" rx="6"/>
+    <rect x="405" y="161" width="130" height="28" rx="6"/>
+    <rect x="405" y="203" width="130" height="28" rx="6"/>
+  </g>
+
+  <!-- Abstract address text -->
+  <g fill="#8DAE9F">
+    <rect x="78" y="86" width="74" height="5" rx="2.5"/>
+    <rect x="78" y="128" width="94" height="5" rx="2.5"/>
+    <rect x="78" y="170" width="65" height="5" rx="2.5"/>
+    <rect x="78" y="212" width="84" height="5" rx="2.5"/>
+    <rect x="418" y="86" width="80" height="5" rx="2.5"/>
+    <rect x="418" y="128" width="61" height="5" rx="2.5"/>
+    <rect x="418" y="170" width="91" height="5" rx="2.5"/>
+    <rect x="418" y="212" width="70" height="5" rx="2.5"/>
+  </g>
+
+  <g fill="#B2C9BF">
+    <rect x="78" y="95" width="48" height="3" rx="1.5"/>
+    <rect x="78" y="137" width="64" height="3" rx="1.5"/>
+    <rect x="78" y="179" width="78" height="3" rx="1.5"/>
+    <rect x="78" y="221" width="53" height="3" rx="1.5"/>
+    <rect x="418" y="95" width="55" height="3" rx="1.5"/>
+    <rect x="418" y="137" width="79" height="3" rx="1.5"/>
+    <rect x="418" y="179" width="49" height="3" rx="1.5"/>
+    <rect x="418" y="221" width="67" height="3" rx="1.5"/>
+  </g>
+
+  <!-- Similarity-ranked candidate matches -->
+  <g fill="none" stroke-width="2.5"
+     stroke-linecap="round" opacity=".85">
+
+    <!-- Strong matches -->
+    <path d="M195 91 C255 91 345 91 405 91"
+          stroke="#378965"/>
+    <path d="M195 133 C260 133 340 175 405 175"
+          stroke="#378965"/>
+    <path d="M195 217 C265 217 335 217 405 217"
+          stroke="#378965"/>
+
+    <!-- Partial match -->
+    <path d="M195 175 C260 175 340 133 405 133"
+          stroke="#D9A85C" stroke-dasharray="5 6"/>
+
+    <!-- Low-confidence candidate -->
+    <path d="M195 175 C265 175 335 217 405 217"
+          stroke="#D76B75" stroke-dasharray="3 7"
+          opacity=".6"/>
+  </g>
+
+  <!-- Matching algorithm -->
+  <circle cx="300" cy="154" r="37"
+          fill="#F4F8F6" stroke="#08633F"
+          stroke-width="3"/>
+
+  <path d="M281 154 L293 166 L319 140"
+        fill="none" stroke="#08633F"
+        stroke-width="5" stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
